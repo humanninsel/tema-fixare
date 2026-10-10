@@ -1,0 +1,128 @@
+header {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 999999999999;
+  background-color: transparent;
+
+  .navbar {
+    background: linear-gradient(90deg, rgba(0, 139, 224, 0.35) 0%, rgba(0, 31, 132, 0.35) 40%, rgba(117, 54, 135, 0.35) 90%);
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    padding: 15px 100px;
+
+    .navbar-nav {
+      align-items: center;
+      gap: 30px;
+
+      .nav-item {
+        .nav-link {
+          /* nav-link */
+
+          font-family: 'Geist';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16.8px;
+          line-height: 22px;
+          /* identical to box height */
+          color: #FFFFFF;
+          transition: all .3s linear;
+
+          &:hover {
+            /* nav-link */
+
+            font-family: 'Geist';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16.8px;
+            line-height: 22px;
+            /* identical to box height */
+            color: #001F84;
+
+          }
+        }
+
+        .nav-cta {
+          /* nav-cta */
+
+          display: inline-block;
+          padding: 16.8px 28.8px;
+
+
+          background: #008BE0;
+          border-radius: 7.2px;
+
+
+
+          font-family: 'Geist';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16.8px;
+          line-height: 22px;
+          /* identical to box height */
+
+          color: #FFFFFF;
+
+
+
+        }
+      }
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    .navbar {
+      padding: 20px 50px;
+
+      .navbar-toggler {
+        border: 0;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .navbar-brand {
+        img {
+          max-width: 152px;
+        }
+      }
+
+      .navbar-nav {
+        gap: 15px;
+        padding: 15px 0 30px;
+
+
+      }
+
+      .cta-redes {
+
+        font-family: 'Geist';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27.0769px;
+        line-height: 35px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+
+      }
+
+      .icones-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+
+        .icone-rede {
+          img {
+            width: 62px;
+          }
+        }
+      }
+    }
+  }
+}

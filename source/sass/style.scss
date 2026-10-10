@@ -1,0 +1,198 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1250px,
+  xxl: 1600px,
+);
+// @font-face {
+//   font-family: 'Greycliff';
+//   src: url('../fonts/GreycliffCFBold.woff2') format('woff2'),
+//       url('../fonts/GreycliffCFBold.woff') format('woff');
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+// @font-face {
+//   font-family: 'Greycliff';
+//   src: url('../fonts/GreycliffCFRegular.woff2') format('woff2'),
+//       url('../fonts/GreycliffCFRegular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+// @font-face {
+//   font-family: 'Greycliff';
+//   src: url('../fonts/GreycliffCFExtraLightRegular.woff2') format('woff2'),
+//       url('../fonts/GreycliffCFExtraLightRegular.woff') format('woff');
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@import "animate";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #fff;
+  color: #616161;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.btn-cta {
+  background-color: #fff;
+  display: inline-block;
+  padding: 13px 54px;
+  width: 100%;
+  max-width: 270px;
+  border-radius: 30px;
+  color: #EFE8E1;
+  font-family: "neulis-sans", "Geist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.6px;
+  line-height: 20px;
+  color: #008BE0;
+  position: relative;
+  border: 1px solid #008BE0;
+  z-index: 2;
+  transition: all .3s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    background-color: #008BE0;
+    color: #fff;
+  }
+}
+
+.titulo {
+
+
+  font-family: "neulis-sans", "Geist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 63px;
+
+  color: #001F84;
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+
+
+
+    font-size: 31.5897px;
+    line-height: 41px;
+
+
+
+
+  }
+
+}
+
+.subtitulo {
+
+
+  font-family: "neulis-sans", "Geist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.2px;
+  line-height: 150%;
+  /* identical to box height, or 29px */
+  color: #616161;
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+
+
+
+    font-size: 16.9231px;
+    line-height: 150%;
+    /* or 25px */
+
+
+
+  }
+
+
+}
+
+.tag {
+
+  padding: 6px 16px;
+
+  width: fit-content;
+  background: #E8F4FD;
+  border-radius: 40px;
+
+
+  font-family: "neulis-sans", "Geist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13.2px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #008BE0;
+
+
+}
+
+
+
+.tns-nav {
+  text-align: center;
+  margin-top: 25px;
+
+  button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0px solid #0F0F0F;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+    margin: 0 6px;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    &.tns-nav-active {
+      
+
+      background: linear-gradient(90deg, #008BE0 0%, #001F84 40%, #753687 90%);
+
+
+    }
+  }
+}
+
+.lb-dataContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+  z-index: 10;
+}
+
+@import "footer", "header", "home";

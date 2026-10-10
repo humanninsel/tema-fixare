@@ -1,0 +1,144 @@
+footer {
+
+  padding: 96px 0 46px;
+
+
+
+
+  /* Linear */
+  background: linear-gradient(90deg, #008BE0 0%, #001F84 40%, #753687 90%);
+  border-radius: 66px 66px 0px 0px;
+  color: #fff;
+
+  .disclaimer {
+
+
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.6px;
+    line-height: 160%;
+    /* or 25px */
+
+    color: rgba(255, 255, 255, 0.75);
+    margin: 24px 0;
+
+  }
+
+  .titulo-footer {
+
+
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 20px;
+
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: block;
+      margin-bottom: 14px;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+
+      a {
+
+        font-family: 'Geist';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.6px;
+        line-height: 160%;
+        /* identical to box height, or 25px */
+
+        color: rgba(255, 255, 255, 0.75);
+
+
+
+        &:hover {
+          color: #fff;
+          text-decoration: underline !important;
+        }
+      }
+
+    }
+  }
+
+  hr {
+    opacity: 1;
+
+    height: 3px;
+    border: 0;
+    background: linear-gradient(90deg, #008BE0 0%, #753687 100%);
+    border-radius: 2px;
+    margin: 36px 0;
+
+
+  }
+
+  .copy {
+
+
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.2px;
+    line-height: 160%;
+    /* or 21px */
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    p {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .referencias {
+
+
+
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 160%;
+    /* or 13px */
+    text-align: justify;
+
+    color: #fff;
+    p{
+      margin-bottom: 0;
+    }
+    .aviso-legal {
+
+
+      font-family: 'Geist';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 9px;
+      line-height: 160%;
+      /* identical to box height, or 13px */
+
+      color: #fff;
+
+
+    }
+
+
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    padding: 96px 15px 40px;
+    border-radius: 46px 46px 0px 0px;
+  }
+}

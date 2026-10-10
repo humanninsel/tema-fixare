@@ -1,0 +1,481 @@
+.banner-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tns-controls {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      border: 0;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 200px;
+      height: 113px;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      padding: 26px;
+
+      &:nth-child(1) {
+        background-image: url(../img/fundo-botao-prev.png);
+      }
+
+      &:nth-last-child(1) {
+        justify-content: flex-end;
+        background-image: url(../img/fundo-botao-next.png);
+      }
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    .tns-controls {
+
+      button {
+
+        width: 100px;
+        height: 55px;
+
+        padding: 14px;
+
+        img {
+          width: 36px;
+        }
+
+        &:nth-child(1) {
+          background-image: url(../img/fundo-botao-prev.png);
+        }
+
+        &:nth-last-child(1) {
+          justify-content: flex-end;
+          background-image: url(../img/fundo-botao-next.png);
+        }
+      }
+    }
+  }
+}
+
+.familiaHirudoid {
+  padding: 90px 0;
+
+  .produtos {
+    padding-top: 90px;
+
+    .produto-card {
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 28.8px;
+      height: 100%;
+
+
+      background: #FFFFFF;
+      border: 1.5px solid #E8EDF5;
+      box-shadow: 0px 4px 24px rgba(0, 31, 132, 0.08);
+      border-radius: 16px;
+
+      .cabecalho-produto {
+        width: 100%;
+        height: 246px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .tag-produto {
+        margin-bottom: 20px;
+        padding: 5px 14px;
+
+        width: fit-content;
+
+
+        border: 1px solid #C8C8C8;
+        border-radius: 40px;
+
+
+
+        font-family: 'Neulis Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13.2px;
+        line-height: 17px;
+
+
+
+      }
+
+      .titulo-produto {
+
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 10px;
+        color: #212121;
+
+
+
+      }
+
+      .mensagem-produto {
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16.8px;
+        line-height: 150%;
+        /* or 25px */
+
+        color: #616161;
+        margin-bottom: 17px;
+
+
+
+      }
+
+      .botoes {
+        margin-top: auto;
+
+        .saiba-mais {
+          margin-bottom: 12px;
+          color: #FFFFFF;
+          border: 1px solid #fff;
+
+          &:hover {
+            background: #008BE0;
+            color: #FFFFFF;
+            border: 1px solid #008BE0;
+          }
+        }
+      }
+
+      &.hematomas {
+        .tag-produto {
+          color: #008BE0;
+
+        }
+
+        .saiba-mais {
+
+          background: linear-gradient(90deg, #008BE0 0%, #001F84 40%, #753687 90%);
+
+          &:hover {
+            background: #008BE0;
+            color: #fff;
+            border: 1px solid #008BE0;
+          }
+
+        }
+
+      }
+
+      &.infantil {
+        .tag-produto {
+          color: #E5B1AF;
+
+        }
+
+        .saiba-mais {
+
+
+          background: linear-gradient(90deg, #753687 0%, #E5B1AF 100%);
+
+          &:hover {
+            background: #008BE0;
+            color: #fff;
+            border: 1px solid #008BE0;
+          }
+
+
+
+        }
+
+      }
+
+      &.varizes {
+        .tag-produto {
+          color: #EF7029;
+
+        }
+
+        .saiba-mais {
+
+          background: linear-gradient(90deg, #753687 0%, #EF7029 100%);
+
+          &:hover {
+            background: #008BE0;
+            color: #fff;
+            border: 1px solid #008BE0;
+          }
+
+
+
+        }
+
+      }
+
+      &.revitaliza {
+        .tag-produto {
+          color: #88A369;
+
+        }
+
+        .saiba-mais {
+
+
+
+          background: linear-gradient(90deg, #753687 0%, #A778AF 26.91%, #BBD39B 58.7%, #88A369 100%);
+
+          &:hover {
+            background: #008BE0;
+            color: #fff;
+            border: 1px solid #008BE0;
+          }
+
+
+
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    padding: 50px 0;
+
+    .produtos {
+      padding-top: 27px;
+
+      .produto-card {
+        .titulo-produto {
+
+
+
+
+
+          font-size: 22.5641px;
+          line-height: 29px;
+
+
+
+
+
+
+
+        }
+
+        .mensagem-produto {
+
+
+          font-size: 15.7949px;
+          line-height: 140%;
+          /* or 22px */
+
+
+
+
+
+        }
+
+        .botoes {
+          margin-top: auto;
+
+          .saiba-mais,
+          .btn-cta {
+            max-width: 100%;
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog {
+  padding: 90px 0;
+
+  .btn-cta-blog {
+
+    padding: 14.4px 28.8px;
+
+
+    border: 1.5px solid #008BE0;
+    border-radius: 7.2px;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.6px;
+    line-height: 20px;
+
+    color: #008BE0;
+
+    display: block;
+    width: fit-content;
+    margin: 36px auto 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #008BE0;
+      color: #fff;
+    }
+
+  }
+
+  .lista-artigos {
+    .artigo {
+      background: #FFFFFF;
+      border: 1.2px solid #E8EDF5;
+      box-shadow: 0px 4px 20px rgba(0, 31, 132, 0.08);
+      border-radius: 16px;
+
+      .cabecalho {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        width: 100%;
+        height: 220px;
+
+        img {
+          transition: all 0.3s ease;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .corpo {
+        padding: 24px;
+
+        .tag {
+          background: none;
+
+          color: #fff;
+          margin-bottom: 16px;
+        }
+
+        .titulo-artigo {
+          margin-bottom: 16px;
+
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 31px;
+
+          color: #212121;
+
+
+        }
+
+        .resumo {
+          margin-bottom: 16px;
+        }
+
+        .link-artigo {
+
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15.6px;
+          line-height: 20px;
+
+          color: #008BE0;
+
+
+
+        }
+      }
+    }
+  }
+
+  &.blog-home {
+
+    background: linear-gradient(90deg, rgba(0, 139, 224, 0.05) 0%, rgba(0, 31, 132, 0.05) 40%, rgba(117, 54, 135, 0.05) 90%);
+
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {}
+}
+
+.insta {
+  padding: 90px 0 72px;
+
+  .wrapper-plugin {
+    margin: 56px 0;
+  }
+
+  .redes-sociais {
+    padding: 70px 0 0;
+
+    .cta-redes {
+
+
+      font-family: 'Geist';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      margin-bottom: 28px;
+      color: #212121;
+
+
+
+    }
+
+    .icones-redes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .icone-rede {
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-6px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    .icones-redes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .icone-rede {
+        img{
+          width: 62px;
+        }
+      }
+    }
+  }
+}
