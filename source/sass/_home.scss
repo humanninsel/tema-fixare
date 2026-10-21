@@ -1,481 +1,411 @@
 .banner-home {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  .tns-controls {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  -webkit-box-shadow: 0px 57px 88px 0px #b1756a;
+  box-shadow: 0px 57px 88px 0px #b1756a;
 
-    button {
-      border: 0;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      width: 200px;
-      height: 113px;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      padding: 26px;
-
-      &:nth-child(1) {
-        background-image: url(../img/fundo-botao-prev.png);
-      }
-
-      &:nth-last-child(1) {
-        justify-content: flex-end;
-        background-image: url(../img/fundo-botao-next.png);
-      }
-    }
-  }
-
-  @media (max-width: map-get($grid-breakpoints, lg)) {
-    .tns-controls {
-
-      button {
-
-        width: 100px;
-        height: 55px;
-
-        padding: 14px;
-
-        img {
-          width: 36px;
-        }
-
-        &:nth-child(1) {
-          background-image: url(../img/fundo-botao-prev.png);
-        }
-
-        &:nth-last-child(1) {
-          justify-content: flex-end;
-          background-image: url(../img/fundo-botao-next.png);
-        }
-      }
-    }
-  }
-}
-
-.familiaHirudoid {
-  padding: 90px 0;
-
-  .produtos {
-    padding-top: 90px;
-
-    .produto-card {
-
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 28.8px;
-      height: 100%;
-
-
-      background: #FFFFFF;
-      border: 1.5px solid #E8EDF5;
-      box-shadow: 0px 4px 24px rgba(0, 31, 132, 0.08);
-      border-radius: 16px;
-
-      .cabecalho-produto {
-        width: 100%;
-        height: 246px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-
-      .tag-produto {
-        margin-bottom: 20px;
-        padding: 5px 14px;
-
-        width: fit-content;
-
-
-        border: 1px solid #C8C8C8;
-        border-radius: 40px;
-
-
-
-        font-family: 'Neulis Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13.2px;
-        line-height: 17px;
-
-
-
-      }
-
-      .titulo-produto {
-
-
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 31px;
-        margin-bottom: 10px;
-        color: #212121;
-
-
-
-      }
-
-      .mensagem-produto {
-
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16.8px;
-        line-height: 150%;
-        /* or 25px */
-
-        color: #616161;
-        margin-bottom: 17px;
-
-
-
-      }
-
-      .botoes {
-        margin-top: auto;
-
-        .saiba-mais {
-          margin-bottom: 12px;
-          color: #FFFFFF;
-          border: 1px solid #fff;
-
-          &:hover {
-            background: #008BE0;
-            color: #FFFFFF;
-            border: 1px solid #008BE0;
-          }
-        }
-      }
-
-      &.hematomas {
-        .tag-produto {
-          color: #008BE0;
-
-        }
-
-        .saiba-mais {
-
-          background: linear-gradient(90deg, #008BE0 0%, #001F84 40%, #753687 90%);
-
-          &:hover {
-            background: #008BE0;
-            color: #fff;
-            border: 1px solid #008BE0;
-          }
-
-        }
-
-      }
-
-      &.infantil {
-        .tag-produto {
-          color: #E5B1AF;
-
-        }
-
-        .saiba-mais {
-
-
-          background: linear-gradient(90deg, #753687 0%, #E5B1AF 100%);
-
-          &:hover {
-            background: #008BE0;
-            color: #fff;
-            border: 1px solid #008BE0;
-          }
-
-
-
-        }
-
-      }
-
-      &.varizes {
-        .tag-produto {
-          color: #EF7029;
-
-        }
-
-        .saiba-mais {
-
-          background: linear-gradient(90deg, #753687 0%, #EF7029 100%);
-
-          &:hover {
-            background: #008BE0;
-            color: #fff;
-            border: 1px solid #008BE0;
-          }
-
-
-
-        }
-
-      }
-
-      &.revitaliza {
-        .tag-produto {
-          color: #88A369;
-
-        }
-
-        .saiba-mais {
-
-
-
-          background: linear-gradient(90deg, #753687 0%, #A778AF 26.91%, #BBD39B 58.7%, #88A369 100%);
-
-          &:hover {
-            background: #008BE0;
-            color: #fff;
-            border: 1px solid #008BE0;
-          }
-
-
-
-        }
-
-      }
-    }
-  }
-
-  @media (max-width: map-get($grid-breakpoints, lg)) {
-    padding: 50px 0;
-
-    .produtos {
-      padding-top: 27px;
-
-      .produto-card {
-        .titulo-produto {
-
-
-
-
-
-          font-size: 22.5641px;
-          line-height: 29px;
-
-
-
-
-
-
-
-        }
-
-        .mensagem-produto {
-
-
-          font-size: 15.7949px;
-          line-height: 140%;
-          /* or 22px */
-
-
-
-
-
-        }
-
-        .botoes {
-          margin-top: auto;
-
-          .saiba-mais,
-          .btn-cta {
-            max-width: 100%;
-
-
-          }
-        }
-      }
-    }
-  }
-}
-
-.blog {
-  padding: 90px 0;
-
-  .btn-cta-blog {
-
-    padding: 14.4px 28.8px;
-
-
-    border: 1.5px solid #008BE0;
-    border-radius: 7.2px;
-
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15.6px;
-    line-height: 20px;
-
-    color: #008BE0;
-
-    display: block;
-    width: fit-content;
-    margin: 36px auto 0;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: #008BE0;
-      color: #fff;
-    }
-
-  }
-
-  .lista-artigos {
-    .artigo {
-      background: #FFFFFF;
-      border: 1.2px solid #E8EDF5;
-      box-shadow: 0px 4px 20px rgba(0, 31, 132, 0.08);
-      border-radius: 16px;
-
-      .cabecalho {
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
-        width: 100%;
-        height: 220px;
-
-        img {
-          transition: all 0.3s ease;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-        }
-
-        &:hover {
-          img {
-            transform: scale(1.2);
-          }
-        }
-      }
-
-      .corpo {
-        padding: 24px;
-
-        .tag {
-          background: none;
-
-          color: #fff;
-          margin-bottom: 16px;
-        }
-
-        .titulo-artigo {
-          margin-bottom: 16px;
-
-          font-style: normal;
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 31px;
-
-          color: #212121;
-
-
-        }
-
-        .resumo {
-          margin-bottom: 16px;
-        }
-
-        .link-artigo {
-
-          font-style: normal;
-          font-weight: 700;
-          font-size: 15.6px;
-          line-height: 20px;
-
-          color: #008BE0;
-
-
-
-        }
-      }
-    }
-  }
-
-  &.blog-home {
-
-    background: linear-gradient(90deg, rgba(0, 139, 224, 0.05) 0%, rgba(0, 31, 132, 0.05) 40%, rgba(117, 54, 135, 0.05) 90%);
-
-  }
 
   @media (max-width: map-get($grid-breakpoints, lg)) {}
 }
 
-.insta {
-  padding: 90px 0 72px;
 
-  .wrapper-plugin {
-    margin: 56px 0;
+// ==========================================
+// ESTILOS GERAIS DA SEÇÃO E CARDS
+// ==========================================
+.products-section {
+  padding: 40px 20px;
+  font-family: $font-family;
+
+  
+}
+
+.product-card {
+  flex: 1;
+  
+  border: 1.5px solid $color-card-border;
+  border-radius: 28px;
+  padding: 32px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  .card-title {
+    color: $color-title;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+    margin: 0 0 20px 0;
+
+    strong {
+      font-weight: 800;
+    }
   }
 
-  .redes-sociais {
-    padding: 70px 0 0;
+  .card-image {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
 
-    .cta-redes {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
 
+  .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-      font-family: 'Geist';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 31px;
-      text-align: center;
-      margin-bottom: 28px;
-      color: #212121;
-
-
-
+    .product-name {
+      color: $color-title;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 6px 0;
     }
 
-    .icones-redes {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 16px;
+    .product-description {
+      color: $color-text;
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 600;
+      margin: 0 0 24px 0;
+      min-height: 38px; // Para alinhar a altura do texto entre os cards
+    }
+  }
+}
 
-      .icone-rede {
-        transition: all 0.3s ease;
+// ==========================================
+// ESTILO DO BOTÃO E EFEITO HOVER
+// ==========================================
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 6px 6px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-sizing: border-box;
 
-        &:hover {
-          transform: translateY(-6px);
+  // Aplicação do Gradiente Normal
+  background: linear-gradient(90deg, $btn-grad-start 0%, $btn-grad-end 100%);
+  transition: background 0.3s ease, transform 0.2s ease;
+
+  span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .icon-arrow {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      stroke: $btn-hover-grad-start; // A cor da seta usa o tom do gradiente
+      transition: stroke 0.3s ease;
+    }
+  }
+
+  // --- EFEITO HOVER (2ª Imagem) ---
+  &:hover {
+    // Troca para o gradiente escuro no hover
+    background: linear-gradient(90deg, $btn-hover-grad-start 0%, $btn-hover-grad-end 100%);
+
+    .icon-arrow svg {
+      stroke: $btn-hover-grad-end;
+    }
+  }
+}
+
+// ==========================================
+// VARIÁVEIS DE CONFIGURAÇÃO DE CORES E FONTE
+// ==========================================
+// Gradiente de Fundo do Card do FAQ
+$faq-bg-start: #b67d71;
+$faq-bg-end: #a56557;
+
+// Cores do Texto e Elementos
+$faq-text-color: #ffffff;
+$faq-border-color: rgba(255, 255, 255, 0.35); // Linhas separadoras sutis
+
+
+// ==========================================
+// ESTILOS DO FAQ
+// ==========================================
+.faq-section {
+  padding: 40px 20px;
+  font-family: $font-family;
+
+  .faq-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, $faq-bg-start 0%, $faq-bg-end 100%);
+    border-radius: 24px;
+    padding: 60px 50px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    color: $faq-text-color;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+  }
+
+  // --- Coluna Esquerda ---
+  .faq-header {
+    flex: 1;
+
+    .faq-title {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+      line-height: 1.15;
+    }
+
+    .faq-subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.4;
+      opacity: 0.9;
+      margin: 0;
+    }
+  }
+
+  // --- Coluna Direita (Accordion) ---
+  .faq-accordion {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .faq-item {
+      border-bottom: 1px solid $faq-border-color;
+      padding: 18px 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      // Botão que abre/fecha
+      .faq-trigger {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: $faq-text-color;
+        text-align: left;
+        gap: 16px;
+
+        .question-text {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.3;
+        }
+
+        .arrow-icon {
+          width: 22px;
+          height: 22px;
+          flex-shrink: 0;
+          transition: transform 0.3s ease;
+          transform: rotate(45deg);
+        }
+      }
+
+      // Conteúdo da Resposta (Animação de Deslize)
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease;
+        opacity: 0;
+
+        p {
+          font-size: 13px;
+          line-height: 1.5;
+          font-weight: 400;
+          margin: 12px 0 4px 0;
+          opacity: 0.85;
+          max-width: 95%;
+        }
+      }
+
+      // --- ESTADO ABERTO (.active) ---
+      &.active {
+        .faq-trigger {
+          .arrow-icon {
+            // Rotaciona a seta para apontar para baixo-direita (como nas imagens 2, 3 e 4)
+            transform: rotate(90deg);
+          }
+        }
+
+        .faq-content {
+          max-height: 300px; // Altura máxima suficiente para o texto expandir
+          opacity: 1;
+          transition: max-height 0.35s ease-in-out, opacity 0.3s ease;
         }
       }
     }
   }
+}
 
-  @media (max-width: map-get($grid-breakpoints, lg)) {
-    .icones-redes {
+// ==========================================
+// VARIÁVEIS DE CONFIGURAÇÃO DE CORES
+// ==========================================
+// Gradiente de Fundo do Card do Blog
+$blog-card-grad-start: #b67d71;
+$blog-card-grad-end: #a56557;
+
+// Cores do Texto e Elementos
+$blog-main-title-color: #3b1d16; // Tom escuro do título "Blog Fixare"
+$blog-card-title-color: #ffffff;
+$btn-bg-color: #ffffff;
+$btn-text-color: #823f33;
+$btn-icon-bg: #823f33;
+
+$font-family: 'Montserrat', sans-serif;
+
+// ==========================================
+// ESTILOS DO BLOG
+// ==========================================
+.blog-section {
+  padding: 40px 20px;
+  font-family: $font-family;
+
+  .blog-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .blog-main-title {
+    color: $blog-main-title-color;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 32px 0;
+  }
+
+  .blog-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap; // Garante responsividade para telas menores
+  }
+}
+
+.blog-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background: linear-gradient(135deg, $blog-card-grad-start 0%, $blog-card-grad-end 100%);
+  border-radius: 28px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .blog-card-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  // Wrapper da Imagem com cantos arredondados internos
+  .card-image-wrapper {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+  }
+
+  &:hover .card-image-wrapper img {
+    transform: scale(1.04); // Efeito suave de zoom na imagem ao passar o mouse
+  }
+
+  .card-title {
+    color: $blog-card-title-color;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 24px 0;
+    min-height: 56px; // Para igualar a altura dos títulos dos cards
+  }
+
+  // --- BOTÃO LER MAIS ---
+  .btn-read-more {
+    background-color: $btn-bg-color;
+    border-radius: 50px;
+    padding: 6px 20px 6px 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    margin-top: auto; // Alinha o botão sempre no rodapé do card
+
+    .icon-arrow {
+      width: 38px;
+      height: 38px;
+      background-color: $btn-icon-bg;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
 
-      .icone-rede {
-        img{
-          width: 62px;
-        }
+      svg {
+        width: 18px;
+        height: 18px;
+        stroke: #ffffff;
       }
+    }
+
+    span {
+      color: $btn-text-color;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
     }
   }
 }

@@ -47,9 +47,8 @@
 
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
 
@@ -104,26 +103,32 @@
 
 							<li class="nav-item">
 
-								<a class="nav-link" href="<?= get_site_url() ?>/#familia">Família Hirudoid®</a>
+								<a class="nav-link" href="<?= get_site_url() ?>/produtos">Produtos</a>
 
 							</li>
 
 							<li class="nav-item">
 
 								<a aria-current="page" class="nav-link"
-									href="https://hirudoid.com.br/hirublog/">Blog</a>
+									href="<?= get_site_url() ?>/onde-comprar">Onde Comprar</a>
 
 							</li>
 
 							<li class="nav-item">
 
-								<a class="nav-link" href="https://hirudoid.com.br/duvidas/">Dúvidas</a>
+								<a class="nav-link" href="<?= get_site_url() ?>/fale-conosco">Fale Conosco</a>
 
 							</li>
 
 							<li class="nav-item">
 
-								<a class="nav-cta" href="https://hirudoid.com.br/onde-comprar/">Onde Comprar</a>
+								<a class="nav-link" href="<?= get_site_url() ?>/conteudos">Conteudos</a>
+
+							</li>
+
+							<li class="nav-item">
+
+								<a class="nav-link" href="#" target="_blank">Para você médico</a>
 
 							</li>
 

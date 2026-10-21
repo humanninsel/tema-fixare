@@ -1,0 +1,118 @@
+// ==========================================
+// VARIÁVEIS DE CONFIGURAÇÃO DE CORES
+// ==========================================
+$color-terracotta: #be5f48;
+$color-text-hover: #a14934;
+$color-answer-text: #4a4a4a;
+$font-family: 'Montserrat', sans-serif;
+
+// ==========================================
+// CUSTOMIZAÇÃO DO ACCORDION BOOTSTRAP
+// ==========================================
+.page-contato {
+    padding-top: 150px;
+
+    .titulo-pagina {}
+
+    .texto-pagina {}
+
+    .btn-cta {}
+}
+
+.faq-simple-section {
+    padding: 60px 20px;
+    font-family: $font-family;
+    background-color: #ffffff;
+
+    .faq-simple-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    // --- Badge Superior ---
+    .faq-badge {
+        display: inline-block;
+        background-color: $color-terracotta;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.8px;
+        padding: 10px 24px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    // --- Estilização do Accordion ---
+    .accordion {
+        .accordion-item {
+            background-color: transparent;
+            border: none;
+            border-top: 1.5px solid $color-terracotta;
+
+            &:last-child {
+                border-bottom: 1.5px solid $color-terracotta;
+            }
+        }
+
+        // Botão / Pergunta
+        .accordion-button {
+            background-color: transparent;
+            padding: 20px 0;
+            box-shadow: none !important; // Remove o foco/box-shadow azul do Bootstrap
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .question-text {
+                color: $color-terracotta;
+                font-size: 19px;
+                font-weight: 800;
+                line-height: 1.35;
+                transition: color 0.3s ease;
+            }
+
+            // Estilo da Seta NVT/Bootstrap (Substituído por SVG embutido via data URI)
+            &::after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23be5f48' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+                background-size: 22px;
+                width: 22px;
+                height: 22px;
+                transition: transform 0.3s ease;
+            }
+
+            // Efeito Hover
+            &:hover {
+                .question-text {
+                    color: $color-text-hover;
+                }
+            }
+
+            // Estado Aberto (Quando não está colapsado)
+            &:not(.collapsed) {
+                background-color: transparent;
+                color: inherit;
+
+                &::after {
+                    transform: rotate(90deg); // Rotaciona a seta para baixo quando abre
+                }
+            }
+        }
+
+        // Corpo da Resposta
+        .accordion-body {
+            padding: 0 0 24px 0;
+            color: $color-answer-text;
+            font-size: 15px;
+            line-height: 1.6;
+
+            p {
+                margin: 0 0 12px 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

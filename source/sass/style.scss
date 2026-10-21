@@ -38,15 +38,39 @@ $grid-breakpoints: (
 @import "animate";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// ==========================================
+// VARIÁVEIS DE CONFIGURAÇÃO DE CORES
+// ==========================================
+// Gradiente Padrão do Botão (Esquerda para Direita)
+$btn-grad-start: #b97a70;
+$btn-grad-end: #9f5b50;
 
+// Gradiente no HOVER (Tom mais escuro/fechado conforme a 2ª imagem)
+$btn-hover-grad-start: #925348;
+$btn-hover-grad-end: #4b221a;
+
+// Cores Gerais
+$color-card-border: #b87b70;
+$color-title: #b15d4d;
+$color-text: #2c2c2c;
+
+// Fonte (se necessário trocar)
+$font-family: 'Montserrat', sans-serif;
 
 body {
-  font-family: "Geist", sans-serif;
-  font-optical-sizing: auto;
+
+
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 500;
-  background-color: #fff;
-  color: #616161;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 129% */
+  letter-spacing: 0.394722px;
+
+  color: #000000;
+
+
 }
 
 a {
@@ -55,27 +79,34 @@ a {
 }
 
 .btn-cta {
-  background-color: #fff;
+
+
+  background: #89372C;
+  border-radius: 53.1238px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.266667px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+
+
   display: inline-block;
   padding: 13px 54px;
   width: 100%;
-  max-width: 270px;
-  border-radius: 30px;
-  color: #EFE8E1;
-  font-family: "neulis-sans", "Geist", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15.6px;
-  line-height: 20px;
-  color: #008BE0;
+  max-width: 567px;
   position: relative;
-  border: 1px solid #008BE0;
   z-index: 2;
   transition: all .3s ease-in-out;
   text-align: center;
 
   &:hover {
-    background-color: #008BE0;
+    background-color: #C45B3E;
     color: #fff;
   }
 }
@@ -83,7 +114,7 @@ a {
 .titulo {
 
 
-  font-family: "neulis-sans", "Geist", sans-serif;
+  font-family: "neulis-sans", "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -108,7 +139,7 @@ a {
 .subtitulo {
 
 
-  font-family: "neulis-sans", "Geist", sans-serif;
+  font-family: "neulis-sans", "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 19.2px;
@@ -140,7 +171,7 @@ a {
   border-radius: 40px;
 
 
-  font-family: "neulis-sans", "Geist", sans-serif;
+  font-family: "neulis-sans", "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13.2px;
@@ -153,19 +184,41 @@ a {
 }
 
 
+.titulo-pagina {
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.427321px;
+
+  color: #C45B3E;
+
+
+}
 
 .tns-nav {
-  text-align: center;
-  margin-top: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
 
   button {
-    width: 8px;
-    height: 8px;
+    width: 11px;
+    height: 13px;
     padding: 0;
-    border: 0px solid #0F0F0F;
-    background-color: #E6E6E6;
-    border-radius: 50%;
-    margin: 0 6px;
+    border: 0px solid #532722;
+    background-color: #532722;
+    border-radius: 23px;
+    margin: 10px 0px;
+    transition: all 0.3s ease;
 
     &:nth-child(1) {
       margin-left: 0;
@@ -176,9 +229,9 @@ a {
     }
 
     &.tns-nav-active {
-      
 
-      background: linear-gradient(90deg, #008BE0 0%, #001F84 40%, #753687 90%);
+
+      height: 80px;
 
 
     }
@@ -195,4 +248,4 @@ a {
   z-index: 10;
 }
 
-@import "footer", "header", "home";
+@import "footer", "header", "home", "contato", "produtos";

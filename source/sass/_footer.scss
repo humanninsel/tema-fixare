@@ -1,144 +1,145 @@
-footer {
+// ==========================================
+// VARIÁVEIS DE CONFIGURAÇÃO DE CORES E FONTE
+// ==========================================
+$footer-bg-start: #c58375; // Fundo terracota / gradiente leve
+$footer-bg-end: #b77163;
+$footer-text-color: #ffffff;
+$footer-border-color: rgba(255, 255, 255, 0.4); // Linhas finas sob títulos e divisória bottom
 
-  padding: 96px 0 46px;
+$font-family: 'Montserrat', sans-serif;
 
+// ==========================================
+// ESTILOS DO RODAPÉ (FOOTER)
+// ==========================================
+.main-footer {
+  background: linear-gradient(135deg, $footer-bg-start 0%, $footer-bg-end 100%);
+  color: $footer-text-color;
+  font-family: $font-family;
+  padding: 60px 20px 30px;
 
-
-
-  /* Linear */
-  background: linear-gradient(90deg, #008BE0 0%, #001F84 40%, #753687 90%);
-  border-radius: 66px 66px 0px 0px;
-  color: #fff;
-
-  .disclaimer {
-
-
-    font-family: 'Geist';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15.6px;
-    line-height: 160%;
-    /* or 25px */
-
-    color: rgba(255, 255, 255, 0.75);
-    margin: 24px 0;
-
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .titulo-footer {
+  // Grid Principal com 4 Colunas
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
 
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
 
-    font-family: 'Geist';
-    font-style: normal;
-    font-weight: 700;
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // --- Coluna 1: Marca & Logo ---
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .footer-logo img {
+      max-width: 180px;
+      height: auto;
+      display: block;
+    }
+
+    .social-link-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: $footer-text-color;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // --- Títulos das Colunas (com linha inferior suave) ---
+  .footer-col-title {
     font-size: 18px;
-    line-height: 23px;
-
-    margin-bottom: 20px;
-
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $footer-border-color;
+    display: block;
+    width: 100%;
   }
 
-  ul {
+  // --- Listas de Navegação & Links ---
+  .footer-nav,
+  .footer-social-list {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
-    li {
-      display: block;
-      margin-bottom: 14px;
+    li a {
+      color: $footer-text-color;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      display: inline-block;
 
-      &:nth-last-child(1) {
-        margin-bottom: 0;
+      &:hover {
+        opacity: 0.8;
+        transform: translateX(3px);
       }
-
-      a {
-
-        font-family: 'Geist';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15.6px;
-        line-height: 160%;
-        /* identical to box height, or 25px */
-
-        color: rgba(255, 255, 255, 0.75);
-
-
-
-        &:hover {
-          color: #fff;
-          text-decoration: underline !important;
-        }
-      }
-
     }
   }
 
-  hr {
-    opacity: 1;
+  // --- Links de Redes Sociais com Ícone ---
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
-    height: 3px;
-    border: 0;
-    background: linear-gradient(90deg, #008BE0 0%, #753687 100%);
-    border-radius: 2px;
-    margin: 36px 0;
-
-
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      stroke: $footer-text-color;
+      flex-shrink: 0;
+    }
   }
 
-  .copy {
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    stroke: $footer-text-color;
+  }
 
+  // --- Divisória Inferior Transversal ---
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: $footer-border-color;
+    margin: 45px 0 25px;
+  }
 
-    font-family: 'Geist';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13.2px;
-    line-height: 160%;
-    /* or 21px */
+  // --- Rodapé Final / Copyright ---
+  .footer-bottom {
     text-align: center;
 
-    color: rgba(255, 255, 255, 0.55);
-
     p {
-      margin-bottom: 20px;
+      margin: 0;
+      font-size: 13px;
+      font-weight: 400;
+      opacity: 0.9;
     }
-
-  }
-
-  .referencias {
-
-
-
-    font-family: 'Geist';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 160%;
-    /* or 13px */
-    text-align: justify;
-
-    color: #fff;
-    p{
-      margin-bottom: 0;
-    }
-    .aviso-legal {
-
-
-      font-family: 'Geist';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 9px;
-      line-height: 160%;
-      /* identical to box height, or 13px */
-
-      color: #fff;
-
-
-    }
-
-
-  }
-
-  @media (max-width: map-get($grid-breakpoints, lg)) {
-    padding: 96px 15px 40px;
-    border-radius: 46px 46px 0px 0px;
   }
 }
