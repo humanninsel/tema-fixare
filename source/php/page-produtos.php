@@ -40,12 +40,14 @@ get_header(); ?>
                             <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= get_the_title(); ?>">
                         </div>
                         <div class="card-content">
-                            <h3 class="product-name"><?php the_title(); ?></h3>
+                            <div class="card-cabecalho">
+                                <h3 class="product-name"><?php the_title(); ?></h3>
                             <p class="product-description">
-                                <?= get_field('slogan') ?>
+                                <?= get_field('detalhes_thumb') ?>
                             </p>
+                            </div>
                             <img src="<?= get_field('composicao') ?>" alt="" class="img-fluid composicao">
-                            <a href="#" class="btn-primary">
+                            <a href="<?= the_permalink() ?>" class="btn-primary">
                                 <div class="icon-arrow">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                                     stroke-linecap="round" stroke-linejoin="round">
